@@ -7,3 +7,4 @@ console.log(a)
 console.log(a*b)
 console.log(a&b)
 console.log(!true)
+// this is a single line comment 
