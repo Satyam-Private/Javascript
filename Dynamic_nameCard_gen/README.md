@@ -20,7 +20,6 @@ This project demonstrates a **beautiful and interactive** HTML form with JavaScr
 ## 🚀 Live Demo
 You can view the project in action here:  
 **[🔗 Live Demo](https://your-live-demo-link.com)**  
-*(Replace the above link with your deployed version)*
 
 ---
 
