@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beautiful Contact Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="bg-accent"></div>
+
+    <form class="card"  method="post" novalidate>
+      <header class="card__header">
+        <h1>Say Hello 👋</h1>
+        <p>We’d love to hear from you. Fill out the form and we’ll get back to you ASAP.</p>
+      </header>
+
+      <div class="grid">
+        <!-- Name -->
+        <div class="field">
+          <label for="name" class="label">Full name</label>
+          <input id="name" name="name" type="text" class="input" placeholder="e.g., firstName lastName" required />
+          <span class="hint" id="Name_error">Please enter your full name.</span>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email" class="label">Email</label>
+          <input id="email" name="email" type="email" class="input" placeholder="you@example.com" required />
+          <span class="hint" id = "email_error">We’ll never share your email.</span>
+        </div>
+
+        <!-- Topic -->
+        <div class="field">
+          <label for="topic" class="label">Topic</label>
+          <select id="topic" name="topic" class="select" required>
+            <option value="" disabled selected>Select a topic</option>
+            <option>General inquiry</option>
+            <option>Project quote</option>
+            <option>Support</option>
+            <option>Feedback</option>
+          </select>
+          <span class="hint">Pick what this is about.</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="field">
+          <label for="phone" class="label">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" class="input" placeholder="+91 98765 43210" pattern="^[0-9+\-\s()]{7,}$" />
+          <span class="hint">Include country code if outside India.</span>
+        </div>
+
+        <!-- Message -->
+        <div class="field field--full">
+          <label for="message" class="label">Message</label>
+          <textarea id="message" name="message" class="textarea" rows="5" placeholder="Tell us a bit more…" required></textarea>
+          <span class="hint">Be as detailed as you like.</span>
+        </div>
+
+        <!-- Consent -->
+        <div class="field field--full field--inline">
+          <input id="consent" name="consent" type="checkbox" class="checkbox" required />
+          <label for="consent" class="label label--inline">I agree to the terms and privacy policy.</label>
+        </div>
+      </div>
+
+      <footer class="card__footer">
+        <button type="submit" class="button">Send message</button>
+        <p class="fineprint">By submitting, you consent to being contacted about your request.</p>
+      </footer>
+    </form>
+    <script src="index.js"></script>
+  </main>
+</body>
+</html>
