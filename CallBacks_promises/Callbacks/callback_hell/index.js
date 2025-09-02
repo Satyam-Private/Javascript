@@ -16,3 +16,16 @@ getData(1 , () => {
      });
 }); 
 
+
+
+
+function greeting(param , callbackFunc){ 
+    console.log("Hello " + param); 
+    if(callbackFunc){ 
+        callbackFunc();
+    }
+}
+
+greeting("satyam" , () => { 
+    console.log("This is passed function "); 
+})
