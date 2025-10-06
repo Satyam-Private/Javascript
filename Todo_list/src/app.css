@@ -1,0 +1,55 @@
+.container {
+    margin: 40px;
+}
+
+.todo-container {
+    text-align: left;
+}
+
+.myButtons {
+    min-width: 70px; /* keep consistent with button style */
+}
+
+button {
+    min-width: 70px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.mainHeading {
+    margin-top: 40px;
+    text-decoration: underline;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.mainHeading:hover {
+    animation: slide 1s;
+}
+
+/* Define proper keyframes for animation */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+}
