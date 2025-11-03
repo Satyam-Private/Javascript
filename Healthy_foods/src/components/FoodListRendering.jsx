@@ -1,18 +1,20 @@
 import React from 'react'
+import FoodCard from './FoodCard'
 
 const FoodListRendering = ({healthyFoodList}) => {
+    // let clickHandling = () => { 
+    //     console.log("THe button is clicked")
+    // }
   return (
-    <> 
-        {healthyFoodList.length === 0 ? <h3>The list is empty</h3>: null}
-      <ul className="list-group">
-       { 
-         healthyFoodList.map((food , index) => ( 
-           <li key = {food} className="list-group-item "> at index {index+1} the food is {food}</li>
-         ))
-       }
-      </ul>
-    
-    </>
+    <div className="d-flex flex-wrap justify-content-center">
+       
+            { 
+                healthyFoodList.map((food) => (
+                    <FoodCard name = {food.name} desc = {food.desc} imgUrl = {food.imgUrl}/>
+            ) )
+            }
+
+    </div>
   )
 }
 
