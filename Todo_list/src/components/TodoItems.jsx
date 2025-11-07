@@ -1,6 +1,6 @@
 import React from 'react'
 import MyTodo from './MyTodo'
-const TodoItems = ({list}) => {
+const TodoItems = ({list , onDeleteTodo}) => {
     console.log(list)
     return (
         <>
@@ -10,7 +10,9 @@ const TodoItems = ({list}) => {
                         <MyTodo 
                         key = {idx}
                         todoName = {item.todoName} 
-                        todoDate = {item.todoDate} />
+                        todoDate = {item.todoDate} 
+                        onDeleteTodo = {onDeleteTodo}
+                        />
                     ))
                 }
 
