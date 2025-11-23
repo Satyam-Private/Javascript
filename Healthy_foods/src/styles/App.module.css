@@ -1,0 +1,10 @@
+.searchBox{ 
+    display: flex;
+    justify-content: center;
+}
+
+p{ 
+    margin:20px;
+    font-style: italic;
+    font-display: inherit;
+}

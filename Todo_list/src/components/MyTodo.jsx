@@ -1,20 +1,21 @@
 import React from 'react'
 
-const MyTodo = () => {
-  let todoName = 'This is the todo'; 
-  let date = '6/9/10';
+const MyTodo = (props) => {
+  let todoName = props.todoName; 
+  let date = props.todoDate;
   return (
     <> 
-     <div class="container">  
-        <div class="row">
-          <div class="col-6">
+     <div className="container">  
+        <div className="row">
+          <div className="col-6">
               {todoName}
           </div>
-          <div class="col-4">
+          <div className="col-4">
               {date}
           </div>
-          <div class="col-2">
-             <button type="button" class="btn btn-danger">Delete</button>
+          <div className="col-2">
+             <button type="button" className="btn btn-danger" onClick={() => (props.onDeleteTodo(todoName))
+             }>Delete</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,9 @@
+.headerSt{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: khaki;
+    border: 2px solid blue;
+    border-radius: 20px;
+}

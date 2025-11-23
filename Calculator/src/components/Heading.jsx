@@ -2,9 +2,7 @@ import React from 'react'
 import style from '../styles/Heading.module.css'
 const Heading = () => {
   return (
-    <center> 
-        <h1 className={style.heading}>My todo list</h1>
-    </center>
+    <div className= {style.myHeading}>My Calculator</div>
   )
 }
 

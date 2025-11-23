@@ -4,10 +4,15 @@
 
 .todo-container {
     text-align: left;
+    width: 90%;
+    border: 2px solid aqua ;
+}
+.footer-content{ 
+    text-align: center;
 }
 
 .myButtons {
-    min-width: 70px; /* keep consistent with button style */
+    min-width: 70px; 
 }
 
 button {
